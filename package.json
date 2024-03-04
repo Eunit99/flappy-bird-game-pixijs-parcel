@@ -1,0 +1,21 @@
+{
+  "name": "flappy-bird-game-pixijs-parcel",
+  "version": "1.0.0",
+  "description": "This repository accompanies the technical article on `Building a Flappy Bird Game with PixiJS and Parcel` published on the OpenReplay Blog",
+  "source": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tsc && parcel",
+    "build": "parcel build --dist-dir public"
+  },
+  "author": "Eunit",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/pixi.js": "^5.0.0",
+    "parcel": "^2.12.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "pixi.js": "^7.4.0"
+  }
+}
