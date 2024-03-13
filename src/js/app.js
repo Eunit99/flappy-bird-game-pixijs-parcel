@@ -1,3 +1,4 @@
+import * as PIXI from 'pixi.js';
 var canvasWidthHeight = Math.min(Math.min(window.innerHeight, window.innerWidth), 512);
 var GRAVITY = 9.8;
 var GAME_SPEED_X = 40;
@@ -12,7 +13,7 @@ var TUBE_POS_LIST = [
     canvasWidthHeight + 250,
     canvasWidthHeight + 480
 ];
-var Bird = (function () {
+var Bird = /** @class */ (function () {
     function Bird(stage, tubeList, onCollision) {
         var _this = this;
         this.tubeList = tubeList;
@@ -69,7 +70,7 @@ var Bird = (function () {
     };
     return Bird;
 }());
-var Tube = (function () {
+var Tube = /** @class */ (function () {
     function Tube(stage, x) {
         this.innerDistance = 80;
         this.tubeWidth = 20;
